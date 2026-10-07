@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
+
+        printTitle("User1");
         
         
         String[] catalog = {
@@ -23,7 +25,7 @@ public class App {
         }
 
         while (true) {
-        System.out.println("Enter song number: ");
+        System.out.println("Enter song number: (press 0 to quit)");
         int userInput1 = Integer.parseInt(in.nextLine());
 
         
@@ -34,6 +36,15 @@ public class App {
         }
         }
     }
+        static void printTitle(String name) {
+        String title = name + "'s Playlist";
+        System.out.println(title);
+
+        for (int i = 0; i < title.length(); i++) {
+        System.out.print("-");
+        }
+        System.out.println();
+}
         
 }
 
